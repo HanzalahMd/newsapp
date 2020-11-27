@@ -32,7 +32,7 @@ export class SettingsComponent implements OnInit {
 
     await this.apiDB.saveApi(opt)
 
-    this.router.navigate(['top-headlines'])
+    this.router.navigate(['main'])
   }
 
 }

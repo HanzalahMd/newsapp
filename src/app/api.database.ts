@@ -24,4 +24,8 @@ export class ApiDatabase extends Dexie {
       return this.apiData.add(s)
     }
 
+    getApi(): Promise<apiFormat>{
+        return this.apiData['apiKey']
+    }
+
 }

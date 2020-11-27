@@ -1,1 +1,23 @@
-<p>result works!</p>
+<div class="row" *ngFor="let news of newsResult; let i = index">
+    <div class="col mb-2" style="border-bottom: 1px grey solid;">
+      <img [src]="news.image" class="img-fluid rounded">
+      <div class="caption">
+        {{ news.author }}
+      </div>
+      <p>
+        {{ news.title }}
+      </p>
+      <p>
+        {{ news.description }}
+      </p>
+      <p>
+        {{ news.url }}
+      </p>
+      <p>
+        {{ news.publish }}
+      </p>
+      <p>
+        {{ news.content }}
+      </p>
+    </div>
+  </div>
