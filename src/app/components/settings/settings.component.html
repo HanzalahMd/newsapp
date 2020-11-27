@@ -1,0 +1,26 @@
+<div class="row mt-5">
+    <div class="col">
+        <form [formGroup]="form">
+            <div class="form-group">
+                <h3>Settings</h3>
+                <hr class="mb-3">
+              <label>NewsAPI.org</label>
+              <input type="text" placeholder="API from newsapi.org" class="form-control" formControlName="apiKey">
+              <small>Please enter the API key from newsapi.org</small>
+            </div>
+          
+            <div class="row mt-2">
+                <div class="col d-flex justify-content-start align-items-center">
+                    <button type="button" class='btn btn-light'>Back</button>
+                    <button type="button" class='ml-2 btn btn-danger' [disabled]="form.invalid" (click)="deleteKey()">Delete</button>
+                </div>
+                <div class="col d-flex justify-content-end align-items-center">
+                    <button type="button" class='btn btn-success' [disabled]="form.invalid" (click)="addKey()">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+  
+  

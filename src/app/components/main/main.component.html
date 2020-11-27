@@ -1,0 +1,28 @@
+<div class="row mt-3">
+    <div class="col d-flex justify-content-start">
+        <h3>Countries</h3>
+    </div>
+    <div class="col d-flex justify-content-end">
+        <button type="button" class="btn btn-info d-flex justify-content-end">Settings</button>
+    </div>
+</div>
+
+<hr>
+
+<!-- <div class="row" *ngFor="let country of countries; let i = index">
+    <div class="col mb-2" style="border-bottom: 1px grey solid;">
+      <img [src]="country.image" class="img-fluid rounded">
+      <div class="caption">
+        {{ country.title }}
+      </div>
+    </div>
+  </div>> -->
+
+<div class="row">
+    <div class="col">
+        <ul class="list-group" *ngFor="let country of countries; let i = index">
+            <li class="list-group-item">{{ country.name }}<img [src]="country.flag" class="rounded float-right img-fluid"></li>
+          </ul>
+    </div>
+</div>
+  
